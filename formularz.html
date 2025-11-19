@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
+<title> formularz </title>
+</head>
+
+<body>
+	<div style="background-color:gray;">
+		<h1><center> PROJEKTOWANIE STRON INTERNETOWYCH - Yevhenii Dmytriiev </center></h1>
+	</div>
+	<div style="float:left;width:20%; height: 2050px; background-color:aqua;">
+		<h3> HTML </h3>
+			<a href="index.html"> STRONA GŁÓWNA </a><br/>
+			<a href="kolory.html"> KOLORY </a><br/>
+			<a href="nauczyciele.html"> NAUCZYCIELE </a><br/>
+			<a href="zdjęcia.html"> ZDJĘCIA </a><br/>
+			<a href="tabela_na_ocene.html"> TABELA NA OCENĘ </a><br/>
+			<a href="lista.html"> LISTY </a><br/>
+			<a href="mapy_odsylaczy.html"> MAPY ODSYŁACZY </a><br/>
+			<a href="lista_na_ocene.html"> LISTA NA OCENĘ </a><br/>
+			<a href="formularz.html"> FORMULARZ </a><br/>
+	</div>
+	<div style="float:right; width:80%">
+		<form>
+		<p> Imie I Nazwisko: <input type="text" name="imie_i_nazwisko" size="15" /> </p>
+		<p> Adres E-Mail: <input type="text" name="email" value="Wpisz E-Mail" /> </p>
+		<p> Hasło: <input type="password" id="haslo" /> </p>
+		<p> Płeć: <br />
+		<input type="radio" name="plec" value="mezczyzna" /> MĘŻCZYZNA <br />
+		<input type="radio" name="plec" value="kobieta" checked /> KOBIETA </p>
+		<p> <label for="male"> mężczyzna </label>
+			<input type="radio" name="gender" id="male" value="mezczyzna" /> <br />
+		<label for="female"> kobieta </label>
+			<input type="radio" name="gender" id="female" value="kobieta" /><br />
+		</form>
+		
+		<p> JĘZYKI,KTÓRYMI WŁADASZ:</>
+		<p><input type="checkbox" name="nazwa_jezyki" value="wartość_angielski" checked/> ANG </p>
+		<p><input type="checkbox" name="nazwa_jezyki" value="wartość_niemiecki" /> NIE </p>
+		<p><input type="checkbox" name="nazwa_jezyki" value="wartość_chinski" /> CHN </p>
+	</div>
+	<p>
+	<select name="nazwa_owoce"size="4" multiple>
+		<optgroup label="ULUBIONE OWOCE">
+		<option value="truskawki" /> TRUSKAWKI 
+		<option value="banany" /> BANABY
+		<option value="maliny" selected /> MALINY
+		</optgroup>
+	</select>
+	</p>
+	<p>
+	<select id="days[]" name="days[]" size="7" multiple>
+		<optgroup label="DNI WOLNE">
+			<option> PONEDZIALEK </option>
+			<option> WTOREK </option>
+			<option> ŚRODA </option>
+			<option> CZWARTEK </option>
+			<option> PIĄTEK </option>
+		</optgroup> </select> </p>
+		
+	<p><textarea cols="50" rows="6">
+	Jan Niezbędny
+	ul.Nieznana 3
+	40-001 Katowice
+	Polska
+	</textarea></p>
+	
+	<p><textarea cols="50" rows="6">
+	Wprowadż swój Adres
+	</textarea></p>
+	<input type="reset" value="Resetuj"> <br />
+	<input type="submit" value="Opusc stronę"> <br />
+	<button type="button">Kupuj teraz!</button> <br />
+	<input type="file" name="plik"><br />
+	<fieldset> <br />
+	
+	<legend>WYKSZTAŁCENIE:</legend>
+		<input type="radio" name="wyksztalcenie" value="P"> Podstawowe [skrót ALT+P]<br />
+		<input type="radio" name="wyksztalcenie" value="S"> Średnie [skrót ALT+S]<br />
+		<input type="radio" name="wyksztalcenie" value="W"> Wyższe [skrót ALT+W]<br />
+	</fieldset>
+	<img src="zdjecia/gekon.jpg" width="200"><br />
+		<input type="submit" value="wyślij"><br />
+		<input type="reset" value="wyczyść"><br />
+  
+	<button type="submit">Wyślij</button><br />
+	<button style="background-color:red;" type="reset">Usuń</button><br/ >
+  
+	<button type="button">
+		<img src="zdjecia/gekon.jpg" width="200">
+	</button> <br />
+	<p>Atrybut autofocus automatycznie ustawia kursor w wybranym polu formularza</p>
+		<input type="text" name="imie" autofocus>
+	<p>Atrybut autocomplete (on bądź off) służy do włączenia bądź wyłączenia auto-uzupełniania</p>
+		<input type="text" name="miasto" autocomplete="off">
+	<p>Lista proponowanych wartości: wyświetlana jako lista rozwijana</p>
+		<input list="owoce">
+	<datalist id="owoce">
+		<option value="Jabłko">
+		<option value="Gruszka">
+		<option value="Banany">
+		<option value="Truskawki">
+	</datalist>
+	<input type="submit" value="Prześlij"><br />
+  <p>Atrybut required sprawdzający wypełnienie pola. Jeżeli pole formularza będzie puste, nie zostanie on zatwierdzony.</p>
+	<input type="text" name="login" required>
+  <p>TYPY PÓL W HTML5 DO WPROWADZANIA DANYCH:</p><br />
+	<input type="email" value="nazwa@gmail.com"> – wprowadzenie adresu e-mail<br />
+	<input type="url" value="http://"> – wprowadzenie adresu URL<br />
+	<input type="number" value="5"> – wprowadzanie liczby całkowitej<br />
+	<input type="date" value="2015-10-30"> – do wprowadzania daty<br />
+	<input type="color" value="#ff0000"> – do wprowadzania koloru<br />
+  
+  <p>Element wyjściowy przedstawia wynik obliczenia</p> <br />
+	<form oninput="wynik.value=parseInt(a.value)+parseInt(b.value)">
+		<input type="range" id="a" name="a" value="100"> 
+		+
+		<input type="number" id="b" name="b" value="1482"> 
+		=
+		<output name="wynik" for="a b">1582</output>
+	</form><br />
+  
+	<input type="submit" value="Prześlij"><br />
+	<input type="text" value="John" disabled> <br />
+<div style="background-color:gray; clear:both;"><center> &copy; Y.D. October 2025
+</center></div>
+</body>
+</html>
+

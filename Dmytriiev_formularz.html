@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
+<title> formularz </title>
+</head>
+<body style="background-color:#608990;">
+
+	<fieldset>
+	
+	    <legend><p style="color:#408040;"><strong>ADRES</strong></p></legend>
+		<input type="radio" name="wyksztalcenie"> frimowy
+		<input type="radio" name="wyksztalcenie"> prywatny<br />
+<p>
+    <label>Nazwa / Nazwisko i Imię:</label>
+    <input type="text" name="nazwa" value="Informatyk / Yevhenii Dmytriiev" size="50">
+</p>
+<p>
+    <label>ulica i numer budynku</label>
+    <input type="text" name="nazwa" value="" size="50">
+</p>
+<p>
+    <label>Kod pocztowy</label>
+    <input type="text" name="nazwa" value="40-671" size="8">
+</p>
+<p>
+    <label>Miejscowość</label>
+    <input type="text" value="Katowice" size="40">
+</p>
+<p>
+    <label>Teelfon</label>
+    <input type="text" value="+48 601 601 601" size="15">
+</p>
+<p>
+    <label>E-mail</label>
+    <input type="text" value="info@insert.com" size="40">
+</p>
+
+</fieldset>
+<fieldset>
+	<legend><p style="color:#408040;"><strong>WYSYŁKA</strong></p></legend>
+<p>
+    <label>Przesyłka (ekon/prioryt/ekspr):</label>
+    <select name="typ_przesylki">
+      <option value="ekon">Ekonomiczna</option>
+      <option value="prioryt">Priorytetowa</option>
+      <option value="ekspres">Ekspresowa</option>
+    </select>
+</p>
+<p>
+    <label>Waga (g)</label>
+    <input type="text" value="1000" size="10">
+</p>
+<p>
+<label>Gabaryty</label>
+<select id="gabaryt []" name="gabaryt" size"7" multiple>
+	<optgroup><br />
+	  <option>S (28 x 8 x 64 cm)</option><br />
+	  <option>M (38 x 19 x 64 cm)</option><br />
+	  <option>l (41 x 38 x 64)</option><br />
+	  <option>XL (60 x 60 x 70 cm)</option><br />
+	</optgroup><br />
+</p>
+<br />
+<p>
+    <label>Wartość</label>
+    <input type="text" value="" size="1">
+</p>
+<p>
+    <label>Wartość</label>
+    <input type="text" value="0,00" size="10">zł
+</p>
+<p>
+    <label>Nr rachunku</label><br />
+    <input type="text" value="60 1050 1214 1000 0033 6688 5522" size="30">
+</p>
+<label>Data wysylki</label>
+<input type="date" value="2023-10-28"><br />
+
+<fieldset>
+    <label><input type="checkbox" name="z"> Z - żądanie zwrotu/odesłania</label><br />
+    <label><input type="checkbox" name="p"> P - polecony</label><br />
+    <label><input type="checkbox" name="o"> O - potwierdzenie odbioru</label><br />
+    <label><input type="checkbox" name="z2"> Z - zadeklarowanie wartości</label>
+  </fieldset>
+<p>
+    <input type="submit" value="Wyślij" size="20px">
+    <input type="reset" value="Anuluj" size="20px">
+</p>
+</fieldset>
+
+</body>
+</html>
