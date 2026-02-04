@@ -4,7 +4,8 @@
 			background-color: fuchsia;
 			broder-style: solid;
 			border-radius: 5px;
-			border-size: 10px ;
+			width: 200px ;
+			display:inline-black;
 		}
 	a:active{
 			color: white;
@@ -15,6 +16,8 @@
             background-orgin: content-box; 
             background-clip: content-box; 
             border-radius: 5px;
+			width: 200px ;
+			display:inline-black;
 		}
 	a:hover	{
 			color: aqua;
@@ -25,4 +28,6 @@
             background-orgin: content-box; 
             background-clip: content-box; 
             border-radius: 5px;
+			width: 200px ;
+			display:inline-black;
 		}
