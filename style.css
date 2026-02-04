@@ -1,4 +1,50 @@
-table {
-  border-style: dashed;
-  borde-color: cyan;
-}
+	a.raz:link {
+			color: black;
+			text-decoration: none;
+			background-color: fuchsia;
+			broder-style: solid;
+			border-radius: 5px;
+			border-size: 10px ;
+		}
+
+	 	 }
+
+	a.dwa:link 	{
+			color: black;
+			text-decoration: none;
+			background-color: yellow;
+			border-style: double;
+            padding: 10px;
+            background-orgin: content-box; 
+        	background-clip: content-box;
+            border-radius: 5px; 
+	 	 }
+	a.dwa:visted {
+			color: black;
+			text-decoration: none;
+			background-color: fuchsia;
+			border-style: solid;
+            padding: 10px;
+        	border-radius: 5px;
+	  	}
+	a.dwa:active{
+			color: white;
+			text-decoration: none;
+			background-color: red;
+			border-style: dashed;
+            padding: 10px;
+            background-orgin: content-box; 
+            background-clip: content-box; 
+            border-radius: 5px;
+		}
+
+	a.dwa:hover	{
+			color: aqua;
+			text-decoration: none;
+			background-color: green;
+			border-style: outset;
+            padding: 10px;
+            background-orgin: content-box; 
+            background-clip: content-box; 
+            border-radius: 5px;
+		}
