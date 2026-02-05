@@ -31,6 +31,8 @@
 			width: 200px ;
 			display:inline-black;
 		}
-	a.normal {
-			color: red;
-	}
+	ul.punkty{
+			list-style-type:circle;
+			color:violet;
+			font-family: tahoma;
+		}
