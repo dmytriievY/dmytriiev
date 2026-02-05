@@ -31,3 +31,6 @@
 			width: 200px ;
 			display:inline-black;
 		}
+	a.normal {
+			color: red;
+	}
