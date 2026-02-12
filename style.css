@@ -36,3 +36,11 @@
 			color:violet;
 			font-family: tahoma;
 		}
+	div#rozmiar { 
+			border-style: groove;
+			border-color: orange;
+			border-width: medium;
+			height: 5%; 
+            width: 45%;
+            padding: 25px;
+		}
