@@ -8,26 +8,20 @@
 			display:inline-black;
 		}
 	a:active{
-			color: white;
+			color: silver;
 			text-decoration: none;
-			background-color: red;
+			background-color: black;
 			border-style: dashed;
-            padding: 10px;
-            background-orgin: content-box; 
-            background-clip: content-box; 
-            border-radius: 5px;
+			border-radius: 5px ;
 			width: 200px ;
 			display:inline-black;
 		}
 	a:hover	{
-			color: aqua;
+			color: yellow;
 			text-decoration: none;
 			background-color: green;
-			border-style: outset;
-            padding: 10px;
-            background-orgin: content-box; 
-            background-clip: content-box; 
-            border-radius: 5px;
+			border-style: dotted;
+			border-radius: 5px;
 			width: 200px ;
 			display:inline-black;
 		}
