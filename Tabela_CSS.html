@@ -33,17 +33,43 @@
 		border-top: 1px solid aqua;
 		padding:8px;
 	}
-		tr:hover {
-			background-color:aqua;
-		}
-	.trzy {
-		width:80%;
-		border-collapse:collapse;
+	tr.color:hover {
+		background-color:aqua;
+	}
+	table.trzy {
+		border-collapse: collapse;
+		width: 80%;
+	}
+	th.trzy {
+		padding:8px;
+		border:1px solid gray;
+	}
+	td.trzy {
+		padding:8px;
+		border:1px solid gray;
+	}
+	tr.trzy:hover	{
+		background-color:silver;
+	}
+	tr.trzy:nth-child(even):hover	{
+		background-color:fuchsia;
+	}
+	td.trzy2:nth-child(odd):hover	{
+		background-color: purple;
+	}
+	td.trzy2:nth-child(even):hover	{
+		background-color: silver;
+	}
+	th.trzy2:nth-child(even):hover	{
+		background-color: aqua;
+	}
+	th.trzy2:nth-child(odd):hover	{
+		background-color: yellow;
 	}
 </style>
 </head>
  <body bgcolor="gray">
-	<div style="float:left; background-color:cyan; width:20%; height:1100px; ">
+	<div style="float:left; background-color:cyan; width:20%; height:2100px; ">
 		<hr />
 		<h3> <center> MENU PORUSZANIA </h3> </center>
 		<hr />
@@ -132,15 +158,16 @@
 			</tr>
 		</table>
 	</div>
+	<hr>
 	 <br />
 	 <div>
 		 <table class="one">
-		 <tr>
+		 <tr class="color">
 			 <td class="dwa">Pierwsze Imię</td>
 			 <td class="dwa">Nazwisko</td>
 			 <td class="dwa">Zarobek na godz.</td>
 		 </tr>
-		<tr>
+		<tr class="color">
 			 <td class="dwa">Peter</td>
 			 <td class="dwa">Griffin</td>
 			 <td class="dwa">$100</td>
@@ -150,22 +177,82 @@
 			 <td class="dwa">Griffin</td>
 			 <td class="dwa">$150</td>
 		 </tr>
-			 <tr>
+		<tr class="color">
 			 <td class="dwa">Joe</td>
 			 <td class="dwa">Swanson</td>
 			 <td class="dwa">$300</td>
 		 </tr>
-			 <tr>
+		<tr class="color">
 			 <td class="dwa">Cleveland</td>
 			 <td class="dwa">Brown</td>
 			 <td class="dwa">$250</td>
 		 </tr>
 		 </table>
 	 </div>
+	 <hr>
+	 <div>
+		<table class="trzy">
+		 <tr class="trzy">
+			 <td class="trzy">Pierwsze Imię</td>
+			 <td class="trzy">Nazwisko</td>
+			 <td class="trzy">Zarobek na godz.</td>
+		 </tr>
+		<tr class="trzy">
+			 <td class="trzy">Peter</td>
+			 <td class="trzy">Griffin</td>
+			 <td class="trzy">$100</td>
+		 </tr>
+			 <tr class="trzy">
+			 <td class="trzy">Lois</td>
+			 <td class="trzy">Griffin</td>
+			 <td class="trzy">$150</td>
+		 </tr>
+		<tr class="trzy">
+			 <td class="trzy">Joe</td>
+			 <td class="trzy">Swanson</td>
+			 <td class="trzy">$300</td>
+		 </tr>
+		<tr class="trzy">
+			 <td class="trzy">Cleveland</td>
+			 <td class="trzy">Brown</td>
+			 <td class="trzy">$250</td>
+		 </tr>
+		 </table>
+	 </div>
+	 <hr>
+	 <div>
+		<table class="trzy">
+	<tr class="trzy2">
+		<th class="trzy2">Pierwsze Imię</th>
+		<th class="trzy2">Nazwisko</th>
+		<th class="trzy2">Zarobek na godz.</th>
+	</tr>
+	<tr class="trzy2">
+		<td class="trzy2">Peter</td>
+		<td class="trzy2">Griffin</td>
+		<td class="trzy2">$100</td>
+	</tr>
+	<tr class="trzy2">
+		<td class="trzy2">Lois</td>
+		<td class="trzy2">Griffin</td>
+		<td class="trzy2">$150</td>
+	</tr>
+	<tr class="trzy2">
+		<td class="trzy2">Joe</td>
+		<td class="trzy2">Swanson</td>
+		<td class="trzy2">$300</td>
+	</tr>
+	
+	<tr class="trzy2">
+		<td class="trzy2">Cleveland</td>
+		<td class="trzy2">Brown</td>
+		<td class="trzy2">$250</td>
+	</tr>	
+</table>
+	 </div>
 </body>
 
 </html>
-
 
 
 
