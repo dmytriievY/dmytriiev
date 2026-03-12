@@ -47,24 +47,66 @@
 	td.trzy {
 		padding:8px;
 		border:1px solid gray;
+		border-bottom: 2px red dotted;
 	}
 	tr.trzy:hover	{
 		background-color:silver;
+		border-bottom: 2px red dotted;
 	}
 	tr.trzy:nth-child(even):hover	{
 		background-color:fuchsia;
+		border-bottom: 2px red dotted;
 	}
 	td.trzy2:nth-child(odd):hover	{
 		background-color: purple;
+		border-bottom: 2px red dotted;
 	}
 	td.trzy2:nth-child(even):hover	{
 		background-color: silver;
+		border-bottom: 2px red dotted;
 	}
 	th.trzy2:nth-child(even):hover	{
 		background-color: aqua;
+		border-bottom: 2px red dotted;
 	}
 	th.trzy2:nth-child(odd):hover	{
 		background-color: yellow;
+		border-bottom: 2px red dotted;
+	}
+	table.cztery {
+		broder: 1px solid black;
+		width:50%;
+	}
+	tr.cztery {
+		background-color: yellow;
+		color:red;
+	}
+	td.cztery {
+		background-color:white;
+	}
+	table *.piec {
+	border: 1px solid black;
+	width:50%;
+	}
+	th.piec {
+	background-color: yellow;
+	color:red;
+	}
+	div.cztery {
+		border: 1px black solid;
+	}
+
+	table.noc, table.noc *  {
+	border: 3pt outset	maroon;
+	border-spacing: 10px;
+	empty-cells: hide;
+	}
+	table.noc th {
+	border: 3pt outset maroon;
+	}
+	th.pink {
+	background-color: pink;
+	color: blue;
 	}
 </style>
 </head>
@@ -250,9 +292,34 @@
 	</tr>	
 </table>
 	 </div>
+	<hr>
+	<div class="cztery">
+	<table class="cztery">
+		<tr class="cztery">
+			<td>1</td>
+			<td>a</td>
+		</tr>
+		<tr>
+			<td class="cztery">2</td>
+			<td class="cztery">b</td>
+		</tr>
+	</table>
+	</div>
+	<hr>
+	<div class="cztery">
+		<table class="piec">
+			<tr>
+				<td class="piec">I</td>
+				<td class="piec">II</td>
+			</tr>
+			<tr>
+				<td>i</td>
+				<td>ii</td>
+			</tr>
+		</table>
+	</div>
 </body>
 
 </html>
-
 
 
