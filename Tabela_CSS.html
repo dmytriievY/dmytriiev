@@ -108,6 +108,59 @@
 	background-color: pink;
 	color: blue;
 	}
+	table.c, table.c * 	{
+	border: 2pt solid black;
+	border-collapse: collapse; 
+	empty-cells: show;
+	border-spacing: 10px;
+	}
+	table.c th 	{
+	border: inset 3pt; 
+	color: purple; 
+    }
+	table.a  {
+	margin-right: 200px;
+	} 	
+	table.a, table.a * {
+	border: 1px solid black; caption-side:left;
+	background-color:black; color: white;
+	border-color:aqua;
+	}
+	table.a th {
+	background-color:aqua; color:navy;
+	}
+	caption {
+		margin-right: 10px; 
+		vertical-align: middle;
+		text-align: center;
+		width: 80pt;
+		background-color:aqua;
+		color:navy;	
+		border-color:black;
+	}
+	table.tablica  {
+	margin-right: 200px; border-spacing:5px;
+	} 	
+	table.tablica, table.tablica * {
+	border: 1px solid green;
+	background-color:navy; color: white;
+	border-color:red;
+	}
+	table.tablica th {
+	background-color:red; color:white;
+	}
+
+	table.wewnatrz {
+	border-spacing:5px;
+	}
+	table.wewnatrz td.wewnatrz {
+	border: 1px solid green; 
+	background-color:#0066ff; color: white;
+	border-color:#00ff66; 
+	}
+	table.wewnatrz th.wewnatrz {
+	background-color:#00ff66; color:white; border-color:#0066ff;
+	}
 </style>
 </head>
  <body bgcolor="gray">
@@ -318,8 +371,119 @@
 			</tr>
 		</table>
 	</div>
+	<hr>
+	<div>
+		<table class="noc" width="50%">
+			<tr>
+				<th class="pink"> Pracownik </th>
+				<th class="pink"> Data rozpoczecia </th>
+				<th class="pink"> Data zakonczenia </th>
+				<th class="pink"> Staż </th>
+			</tr>
+			<tr>
+				<td> Bartosz R. </td>
+				<td> 12/04/2000 </td>
+				<td> 02/02/2011 </td>
+				<td> 11 lat </td>
+			</tr>
+			<tr>
+				<td> Tomasz D </td>
+				<td> 07/06/2009 </td>
+				<td> do teraz </td>
+				<td></td>
+				</tr>
+		</table> 
+	</div>
+	<hr>
+	<div>
+	<table class="c" width="50%">
+<tr>
+<th class="pink"> Pracownik </th>
+<th class="pink"> Data rozpoczecia </th>
+<th class="pink"> Data zakonczenia </th>
+</tr>
+<tr>
+<td> Bartosz R. </td>
+<td> 12/04/2000 </td>
+<td> 02/02/2011 </td>
+</tr>
+<tr>
+<td> Tomasz D </td>
+<td> 07/06/2009 </td>
+<td> do teraz </td>
+</tr>
+<tr>
+<td> Stefan H </td>
+<td> 11/09/2012 </td>
+<td>  </td>
+</tr>
+</table> 
+	</div>
+	<hr>
+	<div>
+	<table width="50%" class="a">
+<tr class="a"> 
+<th> Pracownik </th>
+<th> Data rozpoczecia </th>
+<th> Data zakonczenia </th>
+</tr>
+<tr>
+<td> Bartosz R. </td>
+<td> 12/04/2000 </td>
+<td> 02/02/2011 </td>
+</tr>
+<tr>
+<td> Tomasz D </td>
+<td> 07/06/2009 </td>
+<td> do teraz </td>
+</tr>
+<tr>
+<caption> Schemat kontroli pracownikow </caption>
+</tr>
+</table> <br/>
+	</div>
+	<hr>
+	<div>
+	<table width="50%" class="tablica">
+		<tr class="tablica">
+			<th class="tablica"> Pracownik </th>
+			<th class="tablica"> Data rozpoczecia </th>
+			<th class="tablica"> Data zakonczenia </th>
+		</tr>
+		<tr class="tablica">
+			<td class="tablica"> Rudolf </td>
+			<td class="tablica"> 12/04/2000 </td>
+			<td class="tablica"> 02/02/2011 </td>
+		</tr>
+		<tr>
+			<td colspan="1" class="tablica"> Eryk </td>
+			<td rowspan="2" colspan="2" class="tablica"> 
+	<table width="100%" class="wewnatrz">
+		<tr class="wewnatrz">
+			<th class="wewnatrz"> Pracownik </th>
+			<th class="wewnatrz"> Data rozpoczecia </th>
+		</tr>
+		<tr class="wewnatrz">
+			<td class="wewnatrz"> Adam R. </td>
+			<td class="wewnatrz"> 12/04/2000 </td>
+		</tr>
+		<tr class="wewnatrz">
+			<td class="wewnatrz"> Tomasz D. </td>
+			<td class="wewnatrz"> 07/06/2009 </td>
+		</tr>
+	</table>
+		</td>
+		</tr>
+		<tr class="tablica"> 
+			<td class="tablica"> Bartosz </td>
+		<tr class="tablica">
+			<th class="wewnatrz"> Pracownik </th>
+			<th class="wewnatrz"> Data rozpoczecia </th>
+			<th class="wewnatrz"> Data zakonczenia </th>
+		</tr>
+</table>
+	</div>
 </body>
 
 </html>
-
 
