@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Klub Sportowy</title>
+    <link rel="stylesheet" href="style.css">
+	<style type="text/css">
+	body {
+		margin: 0;
+		font-family: Arial;
+		background: #2b2b2b;
+		color: white;
+	}
+	header {
+		background: #111;
+		text-align: center;
+		padding: 20px;
+	}
+	header h1::before {
+		content: "⚽";
+	}
+	header h1::after {
+		content: "⚽";
+	}
+	.banner img {
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+	}
+	.content {
+		display: flex;
+		padding: 20px;
+		gap: 20px;
+	}
+	.right { 
+		background: #444;
+		padding: 10px;
+		text-align: center;
+	}
+		.right img {
+		width: 100%;
+		max-width: 200px;
+	}
+	article {
+		background: #3a3a3a;
+		padding: 15px;
+		margin-bottom: 15px;
+		border-radius: 10px;
+	}
+	.first::first-letter {
+		font-size: 50px;
+		color: red;
+		float: left;
+		margin-right: 10px;
+	}
+	.first::first-line {
+	color: yellow;
+	}
+	::selection {
+		background: lime;
+		color: black;
+	}
+	footer {
+		background: #111;
+		text-align: center;
+		padding: 10px;
+	}
+	audio {
+		width: 100%;
+		margin-top: 10px;
+	}
+	article, aside {
+		border: 2px solid gray;
+	}
+	h2 {
+		color: limegreen;
+	}
+	
+	</style>
+</head>
+<body>
+<header>
+    <h1>Klub Sportowy</h1>
+</header>
+<main>
+    <section class="banner">
+        <img src="zdjecia/stadium.jpg">
+    </section>
+    <section class="content">
+        <div class="left">
+            <article>
+                <h2>FC Barcelona</h2>
+                <p class="first">
+                    FC Barcelona (Blaugrana) to jeden z najbardziej utytułowanych hiszpańskich klubów sportowych, <br />
+					założony 29 listopada 1899 r. przez Joana Gampera. Kataloński zespół, z siedzibą w Barcelonie, <br />
+					jest 27-krotnym mistrzem Hiszpanii i 5-krotnym zdobywcą Ligi Mistrzów. <br />
+					Męska drużyna piłkarska Barçy zdobyła m.in.: 5 razy Ligę Mistrzów, 28 razy LaLigę, 32 razy Puchar Króla, <br />
+					3 razy Klubowe Mistrzostwo Świata, 4 razy Puchar Zdobywców Pucharów, 5 razy Superpuchar Europy i 15 razy Superpuchar Hiszpanii<br />
+					C Barcelona jest własnością 143 086 socis i posiada miliony kibiców na całym świecie, z których część zrzeszona jest w ok. <br />
+					1270 oficjalnych penyes (fanklubach). Klub posiada m.in. następującą infrastrukturę: stadiony piłkarskie Camp Nou i Estadi Johan Cruyff, <br />
+					kompleks treningowy Ciutat Esportiva Joan Gamper, szkółkę piłkarską La Masia oraz halę sportową Palau Blaugrana. Poza sekcją piłkarską Barça prowadzi <br />
+					również profesjonalne sekcje koszykówki, piłki ręcznej, futsalu i hokeju na rolkach. <br />
+					Blaugrana posiada także drugą drużynę piłki nożnej, zespoły młodzieżowe i sekcje amatorskie. <br />
+                </p>
+            </article>
+            <article>
+                <h3>Kontakt</h3>
+                <ul>
+				<li>Telefon: 123 456 789</li> <br />
+                <li>Email: kontakt@fcb.com</li> <br /> 
+                <li>Strona: www.fcbarcelona.com</li> <br />
+				</ul>
+            </article>
+			<article>
+				<h3>Hymn klubu</h3>
+					<audio controls>
+						<source src="Audio_i_Filmy/hymn.mp3" type="audio/mpeg">
+					</audio>
+			</article>
+        </div>
+        <aside class="right">
+            <h3>Logo</h3>
+            <img src="zdjecia/logo.png">
+        </aside>
+	</section>
+</main>
+<footer>
+    <p>© 2026 Klub Sportowy</p>
+</footer>
+</body>
+</html>
