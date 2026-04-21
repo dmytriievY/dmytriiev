@@ -1,8 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl-PL">
 <head>
-<title> Pseudoelementy </title>
-<style type="text/css">
+	<title>Strona Yevhenii - Projektowanie Stron Internotowych </title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="with=device-with, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+	* { 
+	box-sizing: border-box;
+	}
+	body {
+	background:#666;
+	padding:20px;
+	}
+	header {
+	border: 1 px solid gray;
+	width: 100%;
+	background: #999;
+	padding: 20px;
+	}
+	nav {
+	border:1px solid gray;
+	width:50%;
+	padding:20px;
+	background:pink;
+	}
+	main {
+	float:left;
+	width:60%;
+	margin-top:2 px;
+	background:white;
+	margin-bottom:2%;
+	overflow: auto;
+	}
+	section {
+	border: 1px solid yellow;
+	margin-bottom:2%;
+	background:white;
+	}
+	article {
+	border: 1px solid blue;
+	margin-top: 3px;
+	}
+	aside {
+	padding-left:2%;
+	margin-top:2%;
+	width:38%;
+	float:right;
+	}
+	footer {
+	border: 1px solid green;
+	width:100%;
+	clear:both;
+	padding:20px;
+	background:white;
+	}
+	ul,li {
+	display:block;
+	list-style-type: none;
+	margin:0px;
+	padding:5px;
+	}
+	ul li {
+	display:inline;
+	white-space: nowrap;
+	}
 	h1::first-letter {
 		font-size:60px;
 		color:gray;
@@ -43,14 +105,26 @@
 	background-color:brown;
 	color:red;
 	}
-	h2::selection {
+	::selection {
 	background-color:brown;
 	color:red;
 	}
 </style>
 </head>
-<body>
-<h3 id="naglowek"> Przygoda na sankach </h3>
+ <body bgcolor="gray">
+	<header>
+	<h1> Typowa witryna internotowa </h1>
+		<nav>
+			<ul>
+				<li> <a href="Selektory_sematyczne"> Strona główna </a> </li>
+				<li><a href="Pseudoelementy_YevheniiD2C.html"> Pseudoelementy </a></li>
+				<li><a href="#"> O nas </a></li>
+				<li><a href="#"> Kontakt </a></li>
+		</nav>
+	</header>
+	<main>
+		<article>
+			<h3 id="naglowek"> Przygoda na sankach </h3>
 <h1 id="tekst">
 	Był mroźny, wakacyjny dzień i miasto właśnie okryła świeża pokrywa śniegu. 
 	Styczniowe słońce błyszczało na ośnieżonych wzgórzach i drogach, wnosząc do miasta magiczną atmosferę.
@@ -69,5 +143,36 @@ Obserwowała, jak jej starszy braciszek wraca ze swoimi sankami z powrotem na sz
 – Ona da radę, nie ma nic śmiesznego w tym, że ktoś się boi! – powiedział ze złością Roman do innych dzieci, które się z niej śmiały, gdy wrócił do siostry. Chłopiec stanął przy siostrze i łagodnie jej powiedział:
 – Nie bój się, razem damy radę. Pojadę z tobą na sankach, dobrze? To będzie zabawa. Jeśli tego nie spróbujesz, to przecież nigdy nie dowiesz się, jaka to frajda! – powiedział do niej.
 </h2>
+		</article>
+	</main>
+	<aside> 
+		<section>
+			<p> 
+				Miauczy kotek: miau! <br /> 
+				- Coś ty, kotku, miał?<br /> 
+				- Miałem ja miseczkę mleczka,<br /> 
+				Teraz pusta jest miseczka,<br /> 
+				A jeszcze bym chciał. <br /> 
+			</p>
+		</section>
+		<section>
+			<p>
+			Wzdycha kotek: o! <br /> 
+			- Co ci, kotku, co? <br /> 
+			- Śniła mi się wielka rzeka, <br /> 
+			Wielka rzeka pełna mleka <br /> 
+			Aż po samo dno.  <br /> 
+			</p>
+		</section>
+		<section>
+			<p> Pisnął kotek: pii… <br /> 
+				- Pij, koteczku, pij! <br /> 
+				Skulił ogon, zmrużył ślipie, <br /> 
+				Śpi - i we śnie mleczko chlipie, <br /> 
+				Bo znów mu się śni. <br /> 
+			</p>
+		</section>
+	</aside>
+	<footer> Copyright 2026 </footer>
 </body>
 </html>
